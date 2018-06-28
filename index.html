@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  
+  <link rel="stylesheet" type="text/css" href="costsplit.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+
+	<script type="text/javascript" src="costSplit.js"></script>
+</head>
+<body>
+
+  <div class="divform">
+    <h1>Lets split it</h1>
+
+    <!-- <img id=krabs src="images/krabs.png" width="500" height="500" > -->
+
+  	
+  <img src="images/cash.gif">
+   <form id ="form">
+
+
+    <input type="text" id="friends" Placeholder="How many friends?"><br>
+
+    <input type="text" id ="total" Placeholder="Bill total">
+
+    <input type="text" id="Totalper" Placeholder="Total/person"><br>
+
+    <input type="text" id="tax" placeholder="How much tip">
+
+    <input type="text" id="totalwTip" placeholder="Per person with tip">
+
+
+  </form>
+
+
+  <button type ="button" id ="hitMe" onClick="costSplit()">CostSplit</button>
+
+
+
+  <button type="button" id="awt" onClick="amountWTax()">Costsplit w/ Tip</button>
+
+
+  Tip? <span id="tip"></span>
+  <button onclick="calc4()">None</button>
+  <button onclick="calc()">10% Tip</button>
+  <button onclick="calc2()">15% Tip</button>
+  <button onclick="calc3()">30% Tip</button>
+  
+  <h2 id="result"></h2>
+  <img id="pops" src="images/julius.png" height="500" width="500" style="display:none;">
+  
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
